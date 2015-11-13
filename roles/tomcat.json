@@ -1,0 +1,13 @@
+{
+  "name": "tomcat",
+  "description": "tomcat test",
+  "default_attributes": {
+    "tomcat": {
+      "base_version": "7"
+    }
+  },
+  "run_list": [
+    "recipe[tomcat::users]",
+    "recipe[tomcat]"
+  ]
+}
